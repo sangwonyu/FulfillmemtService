@@ -1,0 +1,57 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+	pageEncoding="UTF-8"%>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
+<aside>
+	<div id="sidebar" class="nav-collapse ">
+		<!-- sidebar menu start-->
+		<ul class="sidebar-menu" id="nav-accordion">
+			<li class="sub-menu"><a href="javascript:;"><i class="fa fa-search"></i><span>조회</span>&nbsp;<i class="fa fa-caret-down"></i></a>
+				<ul class="sub">
+					<li><a href="/FulfillmentService/control/adminServlet?action=chargeHistory&page=1">&nbsp;청구 조회</a></li>
+					<li><a href="/FulfillmentService/control/adminServlet?action=payList&firstAdminId=3">&nbsp;지급 조회</a></li>
+					<li><a href="/FulfillmentService/control/adminServlet?action=monthSales&page=1">&nbsp;판매내역 조회</a></li>
+					<li><a href="/FulfillmentService/view/storage/storageSalesProfit.jsp">&nbsp;매출 이익 조회 </a></li>
+					<li><a href="/FulfillmentService/control/adminServlet?action=orderHistory&page=1">&nbsp;발주내역 조회</a></li>
+					<li><a href="/FulfillmentService/control/adminServlet?action=transportHistory&page=1">&nbsp;운송내역 조회 </a></li>
+				</ul>
+			</li>
+
+			<li class="sub-menu"><a href="javascript:;"> <i
+					class="fa fa-won"></i> <span>청구</span>&nbsp;<i class="fa fa-caret-down"></i></a>
+				<ul class="sub">
+					<li><a href="/FulfillmentService/control/adminServlet?action=chargePage&page=1"> 
+						대금 청구</a></li>
+				</ul>
+			</li>
+			<li class="sub-menu"><a href="javascript:;"> <i
+					class="fa fa-won"></i> <span>지급</span>&nbsp;<i class="fa fa-caret-down"></i></a>
+				<ul class="sub">
+					<li><a href="/FulfillmentService/control/adminServlet?action=supplierPayPage&page=1"> 
+						구매처</a></li>
+					<li><a href="/FulfillmentService/control/adminServlet?action=transportPayPage&page=1">
+						운송회사</a></li>
+				</ul>
+			</li>
+			<li class="sub-menu"><a href="javascript:;"> <i class="fa fa-retweet"></i>
+			<span>발주/출고</span>&nbsp;<i class="fa fa-caret-down"></i></a>
+				<ul class="sub">
+					<li><a href="/FulfillmentService/control/adminServlet?action=orderPage&page=1&state=P">
+					<span>발주</span></a></li>
+					<li><a href="/FulfillmentService/control/adminServlet?action=releasePage&page=1">
+					<span>출고</span></a>
+				</ul>
+			</li>
+
+			<li class="sub-menu"><a href="javascript:;"> <i class="fa fa-paste"></i>
+			<span>송장/조회</span>&nbsp;<i class="fa fa-caret-down"></i></a>
+				<ul class="sub">
+					<li><a href="/FulfillmentService/control/adminServlet?action=invoiceList&page=1">
+					<span>송장처리</span></a>
+				</ul>
+			</li>
+
+			<li class="sub-menu"><a href="/FulfillmentService/control/adminServlet?action=stockList&page=1&compareId=1">
+			<i class="fa fa-pencil-square-o"></i><span>재고조사</span></a></li>
+		</ul>
+	</div>
+</aside>

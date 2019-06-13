@@ -1,0 +1,12 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+	pageEncoding="UTF-8"%>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
+ <aside>
+      <div id="sidebar" class="nav-collapse ">
+        <!-- sidebar menu start-->
+        <ul class="sidebar-menu" id="nav-accordion">
+            	<li class="menu"><a href="/FulfillmentService/control/shopServlet?action=chargeHistory&page=1"> <i class="fa fa-list-ul"></i> 청구리스트</a></li>
+				<li class="menu"><a href="/FulfillmentService/control/shopServlet?action=monthlyInvoiceList&page=1"> <i class="fa fa-search"></i> 송장 내역 조회</a></li>
+		</ul>
+	</div>
+</aside>
